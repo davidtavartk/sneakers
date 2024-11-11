@@ -12,7 +12,9 @@ const App = () => {
         setCartItems((prevCartItems) => prevCartItems + 1);
     };
     const handleDecrement = () => {
+        if(cartItems > 0) {
             setCartItems((prevCartItems) => prevCartItems - 1);
+        }
     };
 
     const handleShowCart = () => {
