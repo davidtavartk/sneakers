@@ -19,7 +19,7 @@ const App = () => {
 
     const handleShowCart = () => {
         setShowCart(true);
-        setHeaderCart(cartItems);
+        setHeaderCart((prevHeaderCart) => prevHeaderCart + cartItems);
         setCartItems(0)
     }
 
